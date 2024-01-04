@@ -1,0 +1,35 @@
+FOR STANDARD OBJECT:
+
+<apex:page standardController="Account">
+    <style>
+        /* Custom CSS to center the image */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+    <apex:outputPanel styleClass="center-image">
+        <apex:image value="{!Account.Image_Url__c}" width="300" height="300" />
+    </apex:outputPanel>
+</apex:page>
+              
+
+____________________________________________________________________
+FOR CUSTOM OBJECT:
+
+<apex:page standardController="Physician_Liaison__c">
+    <style>
+        /* Custom CSS to center the image */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+    <apex:outputPanel styleClass="center-image">
+        <apex:image value="{!Physician_Liaison__c.Image_Url__c}" width="300" height="300" />
+    </apex:outputPanel>
+</apex:page>
